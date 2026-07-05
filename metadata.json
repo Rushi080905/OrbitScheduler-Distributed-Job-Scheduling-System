@@ -1,0 +1,6 @@
+{
+  "name": "OrbitScheduler",
+  "description": "An interactive distributed job scheduler playground and educational workbench with real-time worker simulation, database tables, metrics, and clean production code templates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
