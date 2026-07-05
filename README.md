@@ -38,6 +38,10 @@ src/main.tsx & src/App.tsx: The React (Vite) frontend entry points and dashboard
 
 The system decouples the Client layer, API Gateway, Metadata Database, and a scalable Worker Swarm. State changes are pushed to the client via WebSockets.
 
+
+
+
+
 +---------------------------------------------------+
 |                 CLIENT TIER                       |
 |  +---------------------------------------------+  |
@@ -76,9 +80,16 @@ The system decouples the Client layer, API Gateway, Metadata Database, and a sca
 +---------------------------------------------------+
 
 
+
+
+
+
 🗄️ Entity-Relationship (ER) Diagram
 
 The schema relies on row-level locks and strict state machines to prevent race conditions during concurrent worker polling.
+
+
+
 
       +-------------------------+
       |         QUEUE           |
@@ -108,6 +119,10 @@ The schema relies on row-level locks and strict state machines to prevent race c
 | FK  locked_by (Worker ID)         |
 |     ai_summary                    |
 +-----------------------------------+
+
+
+
+
 
 
 🔌 API Documentation
